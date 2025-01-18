@@ -4,3 +4,11 @@
 
 @import 'modern-resume-theme';
 
+// change the font of the mark tags
+mark {
+    // color
+    color: #000;
+    background-color: transparent;
+    font-weight: bold;
+
+}
