@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    line-height: 1.6; /* Add space between lines for better readability */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: #333; 
+}
+
+ul {
+    list-style: disc; 
+    padding-left: 40px;
+}
+
+a { /* Style links */
+    color: blue;
+    text-decoration: none; 
+}
+
+a:hover { /* Change color on hover */
+    text-decoration: underline;
+}
