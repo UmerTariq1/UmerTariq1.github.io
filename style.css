@@ -1,12 +1,20 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif; /* Example font - choose your preferred one */
     margin: 20px;
     line-height: 1.6; 
+    background-color: #222; /* Dark background */
+    color: #eee; /* Light text color */
 }
 
 header {
-    text-align: center;
+    text-align: center; 
     margin-bottom: 30px;
+}
+
+.profile-pic {
+    float: left; /* Image on the left */
+    margin-right: 20px; /* Space between image and name */
+    border-radius: 50%; /* Optional: Make the image round */
 }
 
 section {
@@ -14,7 +22,7 @@ section {
 }
 
 h1, h2 {
-    color: #333; 
+    color: #eee; /* White headings */
 }
 
 ul {
@@ -23,7 +31,7 @@ ul {
 }
 
 a { 
-    color: blue;
+    color: #007bff; /* Bootstrap blue for links */
     text-decoration: none; 
 }
 
@@ -33,4 +41,10 @@ a:hover {
 
 ul li {
     margin-bottom: 10px;
+}
+
+.hashed-line {
+    border: none;
+    border-top: 2px dashed #555; /* Dashed line */
+    margin: 30px 0; /* Space above and below the line */
 }
