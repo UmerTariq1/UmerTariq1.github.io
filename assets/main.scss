@@ -5,10 +5,16 @@
 @import 'modern-resume-theme';
 
 
-// / Custom styles
-.layout .details .title {
-    color: #ff0000;  // Pure red
+// Custom styles for all links
+.layout .details a {
+    color: #007bff;  // Bootstrap blue
     // OR
-    // color: #dc3545;  // Bootstrap red - more muted
-    // color: #cc0000;  // Darker red
+    // color: #0000ff;  // Pure blue
+    // color: #0366d6;  // GitHub blue
+}
+
+// Optional: Change color on hover
+.layout .details a:hover {
+    color: #0056b3;  // Darker blue on hover
+    text-decoration: underline;  // Optional underline on hover
 }
