@@ -4,11 +4,25 @@
 
 @import 'modern-resume-theme';
 
+// Test style to verify CSS is loading
+body {
+    border: 5px solid red !important;
+}
+
 // change the font of the mark tags
+.layout .details mark,
 mark {
     // color
     color: #000;
     background-color: transparent;
     font-weight: bold;
 
+}
+
+// Custom image sizing
+.layout .details img {
+    max-width: 300px;  // Set maximum width
+    height: auto;      // Maintain aspect ratio
+    display: block;    // Makes the image a block element
+    margin: 20px 0;    // Add some vertical spacing
 }
