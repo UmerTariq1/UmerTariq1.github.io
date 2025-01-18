@@ -47,7 +47,7 @@ additional_links:
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile2.jpg
+about_profile_image: images/profile2.JPG
 about_content: | # this will include new lines to allow paragraphs
   Hi, I'm Umer Butt, an AI Research Assistant at DFKI with expertise in Natural Language Processing and Machine Learning. I specialize in developing NLP-driven automation solutions and AI-powered systems. With a strong background in software development and AI engineering, I've worked on various projects involving RAG, LLMs, and information retrieval systems.
 
@@ -90,6 +90,7 @@ content:
         description: |
           - Supervised a team on multiple projects, including customer offer promotion and delivery systems. Remodelled and optimised implementation, achieving a 28% improvement in performance and a 7% reduction in false recommendations.
 
+
   - title: Education
     layout: list
     content:
@@ -107,6 +108,64 @@ content:
         sub_title: Bachelor's in Computer Science
         description: | 
           Thesis: Implemented a neural-based IR system with Elasticsearch, FAISS, and embeddings from Word2Vec, LSTM, and BERT as part of my Bachelor's thesis. Achieved 2nd position among 300 projects in a university-wide competition.
+
+  - title: Publications
+    layout: list
+    content:
+      - layout: left
+        title: Enabling Low-Resource Language Retrieval - Establishing Baselines for Urdu MS MARCO
+        sub_title: ECIR 2024
+        link: # Add paper link when available
+        description: | 
+          Authors - Umer Butt, S.Varanasi, G.Neumann
+          
+          Focused on developing baselines for Urdu information retrieval using MS MARCO dataset. 
+
+      - layout: left
+        title: Cross-Linguistic Processing of Non-Compositional Expressions in Slavic Languages
+        sub_title: Cog-Alex 2024
+        link: # Add paper link when available
+        description: |
+          Authors - I.Zaitova, I.Stenger, Umer Butt, T.Avgustinova
+          
+          Investigated processing of non-compositional expressions across Slavic languages.
+
+      - layout: left
+        title: AutoQIR - Auto-Encoding Questions with Retrieval Augmented Decoding
+        sub_title: RANLP 2023
+        link: # Add paper link when available
+        description: |
+          Authors - S.Varanasi, Umer Butt, G.Neumann
+          
+          Developed novel approach for unsupervised passage retrieval and zero-shot question generation.
+
+      - layout: left
+        title: Spatial-Economic Analysis for Optimal Electric Vehicle Charging Station Placement
+        sub_title: SASI-ITE 2024
+        link: # Add paper link when available
+        description: |
+          Authors - A.Maurya, C.Agnes, B.Baloch, S.Anwari, Umer Butt (equal contrib)
+          
+          Analyzed optimal placement strategies for EV charging stations using spatial-economic factors.
+
+      - layout: left
+        title: Fairy Tales / Children Stories of the World - Corpus Organization and Text Analytics
+        sub_title: ICLAP 2021
+        link: # Add paper link when available
+        description: |
+          Authors - Y.Khan, Umer Butt
+          
+          Created and analyzed a corpus of children's stories from various cultures.
+
+  
+  - title: Skills & Expertise
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - **Languages**: Python, Java, C, C++, JS, HTML, CSS, SQL, NoSQL
+      - **Frameworks & Tools**: PyTorch, Pandas, Scikit-Learn, Huggingface, XGBoost, Git, MongoDB, ElasticSearch, TensorFlow
+      - **Other Skills**: RAG, OpenAI API, Agile development, Data pipelines, Docker
+      - **Soft Skills**: Problem-solving, Pattern Recognition, Clear Communication
+
 
   - title: Projects 
     layout: list 
@@ -181,7 +240,7 @@ content:
           - <mark>SArima models</mark>
           - <mark>Numpy</mark>
           - <mark>Pandas</mark>
-  
+
 
   - title: A Little More About Me
     layout: text
