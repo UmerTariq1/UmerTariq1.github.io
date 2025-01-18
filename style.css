@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     margin: 20px;
-    line-height: 1.6; /* Add space between lines for better readability */
+    line-height: 1.6; 
 }
 
 header {
@@ -22,11 +22,16 @@ ul {
     padding-left: 40px;
 }
 
-a { /* Style links */
+a { 
     color: blue;
     text-decoration: none; 
 }
 
-a:hover { /* Change color on hover */
+a:hover { 
     text-decoration: underline;
+}
+
+/* Optional: Add some spacing between list items */
+ul li {
+    margin-bottom: 10px;
 }
