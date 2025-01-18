@@ -9,20 +9,21 @@ body {
     border: 5px solid red !important;
 }
 
-// change the font of the mark tags
-.layout .details mark,
-mark {
-    // color
-    color: #000;
-    background-color: transparent;
-    font-weight: bold;
-
+// More specific image targeting
+img[alt="Trees"] {
+    border: 5px solid red !important;
+    max-width: 300px !important;
+    height: auto !important;      
+    display: block !important;    
+    margin: 20px 0 !important;    
 }
 
-// Custom image sizing
-.layout .details img {
-    border: 5px solid red !important;
-    height: auto;      // Maintain aspect ratio
-    display: block;    // Makes the image a block element
-    margin: 20px 0;    // Add some vertical spacing
+// Even more specific if needed
+.layout .details img[alt="Trees"],
+.content img[alt="Trees"] {
+    border: 5px solid rgb(0, 255, 72) !important;
+    max-width: 300px !important;
+    height: auto !important;      
+    display: block !important;    
+    margin: 20px 0 !important;    
 }
