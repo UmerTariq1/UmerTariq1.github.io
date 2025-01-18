@@ -21,7 +21,7 @@ mark {
 
 // Custom image sizing
 .layout .details img {
-    max-width: 300px;  // Set maximum width
+    border: 5px solid red !important;
     height: auto;      // Maintain aspect ratio
     display: block;    // Makes the image a block element
     margin: 20px 0;    // Add some vertical spacing
