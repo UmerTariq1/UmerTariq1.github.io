@@ -4,10 +4,3 @@
 
 @import 'modern-resume-theme';
 
-// Remove highlight and make text bold for mark tags
-mark {
-    background-color: transparent;  // Remove the highlight
-    color: inherit;                 // Use parent text color
-    font-weight: bold;             // Make text bold
-    padding: 0;                    // Remove any padding
-}
