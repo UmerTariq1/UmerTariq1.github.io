@@ -4,17 +4,10 @@
 
 @import 'modern-resume-theme';
 
-
-// Custom styles for all links
-.layout .details a {
-    color: #007bff;  // Bootstrap blue
-    // OR
-    // color: #0000ff;  // Pure blue
-    // color: #0366d6;  // GitHub blue
-}
-
-// Optional: Change color on hover
-.layout .details a:hover {
-    color: #0056b3;  // Darker blue on hover
-    text-decoration: underline;  // Optional underline on hover
+// Remove highlight and make text bold for mark tags
+mark {
+    background-color: transparent;  // Remove the highlight
+    color: inherit;                 // Use parent text color
+    font-weight: bold;             // Make text bold
+    padding: 0;                    // Remove any padding
 }
