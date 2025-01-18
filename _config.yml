@@ -51,7 +51,7 @@ about_profile_image: images/profile2.JPG
 about_content: | # this will include new lines to allow paragraphs
   Hi, I'm Umer Butt, an AI Research Assistant at DFKI with expertise in Natural Language Processing and Machine Learning. I specialize in developing NLP-driven automation solutions and AI-powered systems. With a strong background in software development and AI engineering, I've worked on various projects involving RAG, LLMs, and information retrieval systems.
 
-  I am most skilled in: <mark> Python </mark>, <mark> NLP </mark>, <mark> LLMs </mark>, <mark> Data Science </mark> and <mark> Software Development </mark>
+  I am most skilled in:  </mark> Python</mark> ,  </mark> NLP</mark> ,  </mark> LLMs</mark> ,  </mark> Data Science</mark>  and  </mark> Software Development</mark> 
 
 content:
 
@@ -64,9 +64,9 @@ content:
         sub_title: AI Research Assistant
         caption: April 2022 - Present
         description: | 
-          - Developed and implemented NLP-driven <mark> automation solutions </mark> that processed over <mark> 1000+ </mark> complex documents, reducing processing time for enterprise clients (e.g., Siemens, Beko).
-          - Designed and built an AI-powered student assistant using <mark> RAG </mark>, <mark> LLMs </mark>, and <mark> OpenAI API </mark>.
-          - Collaborated on <mark> AI model deployment pipelines </mark>, ensuring scalability and optimization for real-world applications.
+          - Developed and implemented NLP-driven  </mark> automation solutions</mark>  that processed over  </mark> 1000+</mark>  complex documents, reducing processing time for enterprise clients (e.g., Siemens, Beko).
+          - Designed and built an AI-powered student assistant using  </mark> RAG</mark> ,  </mark> LLMs</mark> , and  </mark> OpenAI API</mark> .
+          - Collaborated on  </mark> AI model deployment pipelines</mark> , ensuring scalability and optimization for real-world applications.
       
       - layout: left
         title: University Of Saarland
@@ -74,8 +74,8 @@ content:
         sub_title: Software Developer
         caption: August 2023 - Present
         description: |
-          - Led the development and optimization of a <mark> Python Django </mark>-based linguistic experiment platform for <mark> 1000+ </mark> active users, launching <mark> 10+ </mark> new experiments and maintaining <mark> 5 </mark> existing projects with a focus on code quality and performance.
-          - Ensured scalability and code quality by implementing <mark> CI/CD </mark> practices, optimizing backend performance, and improving query response time through effective database management (<mark> SQL </mark>).
+          - Led the development and optimization of a  </mark> Python Django</mark> -based linguistic experiment platform for  </mark> 1000+</mark>  active users, launching  </mark> 10+</mark>  new experiments and maintaining  </mark> 5</mark>  existing projects with a focus on code quality and performance.
+          - Ensured scalability and code quality by implementing  </mark> CI/CD</mark>  practices, optimizing backend performance, and improving query response time through effective database management ( </mark> SQL</mark> ).
       
       - layout: left
         title: Love For Data
@@ -83,8 +83,8 @@ content:
         sub_title: AI Engineer
         caption: December 2020 - September 2021
         description: |
-          - Developed an <mark> Information Retrieval system </mark> for the banking sector, enabling access to <mark> 10,000+ </mark> legal regulations with a <mark> 34% </mark> improvement in search relevance using Statistical Models and Transformer Deep Learning Models.
-          - Built a <mark> Query Recommendation module </mark> using Document Clustering and NER, improving query accuracy by <mark> 45% </mark> and precision by <mark> 30% </mark>; integrated <mark> Elasticsearch  </mark>for efficient document indexing and real-time retrieval. 
+          - Developed an  </mark> Information Retrieval system</mark>  for the banking sector, enabling access to  </mark> 10,000+</mark>  legal regulations with a  </mark> 34%</mark>  improvement in search relevance using Statistical Models and Transformer Deep Learning Models.
+          - Built a  </mark> Query Recommendation module</mark>  using Document Clustering and NER, improving query accuracy by  </mark> 45%</mark>  and precision by  </mark> 30%</mark> ; integrated  </mark> Elasticsearch </mark> for efficient document indexing and real-time retrieval. 
 
       - layout: left
         title: Systems Limited
@@ -92,7 +92,7 @@ content:
         sub_title: Software Engineer
         caption: June 2019 - November 2020
         description: |
-          - Supervised a team on multiple projects, including customer offer promotion and delivery systems. Remodelled and optimised implementation, achieving a <mark> 28% </mark> improvement in performance and a <mark> 7% </mark> reduction in false recommendations. Worked on <mark> Java </mark> and <mark> Sprint Boot </mark>.
+          - Supervised a team on multiple projects, including customer offer promotion and delivery systems. Remodelled and optimised implementation, achieving a  </mark> 28%</mark>  improvement in performance and a  </mark> 7%</mark>  reduction in false recommendations. Worked on  </mark> Java</mark>  and  </mark> Sprint Boot</mark> .
 
 
   - title: Education
@@ -122,7 +122,7 @@ content:
         sub_title: ECIR 2024
         link:  https://arxiv.org/abs/2412.12997
         description: | 
-          Authors - <mark> Umer Butt </mark>, S.Varanasi, G.Neumann
+          Authors -  </mark> Umer Butt</mark> , S.Varanasi, G.Neumann
           
           Focused on developing baselines for Urdu information retrieval using MS MARCO dataset. 
 
@@ -131,7 +131,7 @@ content:
         sub_title: Cog-Alex 2024
         link: https://aclanthology.org/2024.cogalex-1.10/
         description: |
-          Authors - I.Zaitova, I.Stenger, <mark> Umer Butt </mark>, T.Avgustinova
+          Authors - I.Zaitova, I.Stenger,  </mark> Umer Butt</mark> , T.Avgustinova
           
           Investigated processing of non-compositional expressions across Slavic languages.
 
@@ -140,7 +140,7 @@ content:
         sub_title: RANLP 2023
         link: https://ieeexplore.ieee.org/abstract/document/10607132
         description: |
-          Authors - S.Varanasi, <mark> Umer Butt </mark>, G.Neumann
+          Authors - S.Varanasi,  </mark> Umer Butt</mark> , G.Neumann
           
           Developed novel approach for unsupervised passage retrieval and zero-shot question generation.
 
@@ -149,7 +149,7 @@ content:
         sub_title: SASI-ITE 2024
         link: https://aclanthology.org/2023.ranlp-1.124.pdf
         description: |
-          Authors - A.Maurya, C.Agnes, B.Baloch, S.Anwari, <mark> Umer Butt </mark> (equal contrib)
+          Authors - A.Maurya, C.Agnes, B.Baloch, S.Anwari,  </mark> Umer Butt</mark>  (equal contrib)
           
           Analyzed optimal placement strategies for EV charging stations using spatial-economic factors.
 
@@ -158,7 +158,7 @@ content:
         sub_title: ICLAP 2021
         link: https://www.researchgate.net/publication/354381634_Classic_Fairy_Tales_Children_Stories_of_the_World_Corpus_Organization_and_Text_Analytics
         description: |
-          Authors - Y.Khan, <mark> Umer Butt </mark>
+          Authors - Y.Khan,  </mark> Umer Butt</mark> 
           
           Created and analyzed a corpus of children's stories from various cultures.
 
@@ -182,7 +182,7 @@ content:
           "This chatbot was a fun challenge to build! I learned a lot about integrating LLMs with external knowledge sources." 
         description: | 
           I learned several skills through this project, including:
-          <mark> Python </mark>  |  <mark> Llama3 </mark>  | <mark> HuggingFace </mark>  | <mark> Streamlit </mark>  | <mark> RAGs </mark>  | <mark> LLMs </mark>
+           </mark> Python</mark>   |   </mark> Llama3</mark>   |  </mark> HuggingFace</mark>   |  </mark> Streamlit</mark>   |  </mark> RAGs</mark>   |  </mark> LLMs</mark> 
       
       - layout: top-middle
         title: Deep IR System Using Context-Aware Vector Representations
@@ -191,7 +191,7 @@ content:
           "Improving information retrieval with deep learning is fascinating. This project helped me understand the power of contextual embeddings."
         description: |
           I learned several skills through this project, including:
-          <mark> FAISS </mark>  |  <mark> LSTM </mark>  |  <mark> BERT </mark>  |  <mark> Elastic Search </mark>
+           </mark> FAISS</mark>   |   </mark> LSTM</mark>   |   </mark> BERT</mark>   |   </mark> Elastic Search</mark> 
       
       - layout: top-middle
         title: Lyrics Generator using LLMs and its website
@@ -200,7 +200,7 @@ content:
           "Generating creative text with AI is mind-blowing! Building this lyrics generator and its website was a rewarding experience."
         description: |
           I learned several skills through this project, including:
-          <mark> Python </mark>  |  <mark> OpenAI API </mark>  |  <mark> Langchain API </mark>  |  <mark> Angular </mark>  |  <mark> Django </mark> 
+           </mark> Python</mark>   |   </mark> OpenAI API</mark>   |   </mark> Langchain API</mark>   |   </mark> Angular</mark>   |   </mark> Django</mark>  
       
       - layout: top-middle
         title: Click through Rate and No. of Clicks Prediction
@@ -209,7 +209,7 @@ content:
           "Predicting user behavior is a key aspect of online advertising. This project gave me valuable experience with machine learning for CTR prediction."
         description: |
           I learned several skills through this project, including:
-          <mark> TFIDF </mark>  |  <mark> Word Embeddings </mark>  |  <mark> Linear Regression </mark>  |  <mark> RF </mark> 
+           </mark> TFIDF</mark>   |   </mark> Word Embeddings</mark>   |   </mark> Linear Regression</mark>   |   </mark> RF</mark>  
       
       - layout: top-middle
         title: Extensive EDA and Modeling on Advertisement Dataset
@@ -218,7 +218,7 @@ content:
           "Exploratory data analysis is crucial for understanding any dataset. This project allowed me to dive deep into an advertising dataset and build predictive models."
         description: |
           I learned several skills through this project, including:
-          <mark> Pandas </mark>  |  <mark> Numpy </mark>  |  <mark> Linear Regression </mark>  |  <mark> Matplotlib </mark>
+           </mark> Pandas</mark>   |   </mark> Numpy</mark>   |   </mark> Linear Regression</mark>   |   </mark> Matplotlib</mark> 
       
       - layout: top-middle
         title: Detailed Time Series Analysis on Solar Energy Dataset
@@ -227,7 +227,7 @@ content:
           "Analyzing time series data is essential in many fields, including renewable energy. This project helped me develop my skills in time series forecasting."
         description: |
           I learned several skills through this project, including:
-          <mark> EDA </mark>  |  <mark> Arima </mark>  |  <mark> SArima models </mark>  |  <mark> Numpy </mark>  |  <mark> Pandas </mark>
+           </mark> EDA</mark>   |   </mark> Arima</mark>   |   </mark> SArima models</mark>   |   </mark> Numpy</mark>   |   </mark> Pandas</mark> 
 
       - layout: top-middle
         title: Automated web scraping of Canada411.ca to extract contact records
@@ -236,7 +236,7 @@ content:
           "#TODO"
         description: |
           I learned several skills through this project, including:
-          <mark> Python </mark>  |  <mark> beautifulSoup </mark>  |  <mark> Data Extraction </mark>
+           </mark> Python</mark>   |   </mark> beautifulSoup</mark>   |   </mark> Data Extraction</mark> 
           
       - layout: top-middle
         title: Automated web scraping of Canada411.ca to extract contact records
@@ -245,7 +245,7 @@ content:
           "#TODO"
         description: |
           I learned several skills through this project, including:
-          <mark> Python </mark>  |  <mark> beautifulSoup </mark>  |  <mark> Data Extraction </mark>
+           </mark> Python</mark>   |   </mark> beautifulSoup</mark>   |   </mark> Data Extraction</mark>  
 
 
 
