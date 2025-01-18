@@ -15,6 +15,8 @@ header {
     float: left; /* Image on the left */
     margin-right: 20px; /* Space between image and name */
     border-radius: 50%; /* Optional: Make the image round */
+    height: auto;
+    width: 100px; /* Image width */
 }
 
 section {

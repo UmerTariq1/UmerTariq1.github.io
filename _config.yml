@@ -1,0 +1,208 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Umer Butt
+title: AI Engineer | Software Developer
+email: mumertbutt@gmail.com
+website: github.com/UmerTariq1
+
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+# twitter_username: facespics
+github_username:  UmerTariq1
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+linkedin_username: umertariq1
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+additional_links:
+- title: itsgoingto.be
+  icon: fas fa-globe
+  url: https://www.youtube.com/watch?v=xvFZjo5PgG0
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile2.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, I'm Umer Butt, an AI Research Assistant at DFKI with expertise in Natural Language Processing and Machine Learning. I specialize in developing NLP-driven automation solutions and AI-powered systems. With a strong background in software development and AI engineering, I've worked on various projects involving RAG, LLMs, and information retrieval systems.
+
+  I am most skilled in: <mark>Python</mark>, <mark>NLP</mark>, and <mark>Machine Learning</mark>
+
+content:
+  - title: Projects 
+    layout: list 
+    content:
+      - layout: top-middle
+        title: RAG LLM chatbot with external knowledge source
+        link: https://github.com/your-username/your-repo-name # Replace with your actual link
+        quote: > 
+          "This chatbot was a fun challenge to build! I learned a lot about integrating LLMs with external knowledge sources." 
+        description: | 
+          I learned several skills through this project, including:
+          - <mark>Python</mark>
+          - <mark>Llama3</mark>
+          - <mark>HuggingFace</mark>
+          - <mark>Streamlit</mark>
+          - <mark>RAGs</mark>
+          - <mark>LLMs</mark>
+      - layout: top-middle
+        title: Deep IR System Using Context-Aware Vector Representations
+        link: https://github.com/your-username/your-repo-name # Replace with your actual link
+        quote: >
+          "Improving information retrieval with deep learning is fascinating. This project helped me understand the power of contextual embeddings."
+        description: |
+          I learned several skills through this project, including:
+          - <mark>FAISS</mark> 
+          - <mark>LSTM</mark>
+          - <mark>BERT</mark>
+          - <mark>Elastic Search</mark>
+      - layout: top-middle
+        title: Lyrics Generator using LLMs and its website
+        link: https://github.com/your-username/your-repo-name # Replace with your actual link
+        quote: >
+          "Generating creative text with AI is mind-blowing! Building this lyrics generator and its website was a rewarding experience."
+        description: |
+          I learned several skills through this project, including:
+          - <mark>Python</mark>
+          - <mark>OpenAI API</mark>
+          - <mark>Langchain API</mark>
+          - <mark>Angular</mark>
+          - <mark>Django</mark> 
+      - layout: top-middle
+        title: Click through Rate and No. of Clicks Prediction
+        link: https://github.com/your-username/your-repo-name # Replace with your actual link
+        quote: >
+          "Predicting user behavior is a key aspect of online advertising. This project gave me valuable experience with machine learning for CTR prediction."
+        description: |
+          I learned several skills through this project, including:
+          - <mark>TFIDF</mark>
+          - <mark>Word Embeddings</mark>
+          - <mark>Linear Regression</mark>
+          - <mark>RF</mark> 
+      - layout: top-middle
+        title: Extensive EDA and Modeling on Advertisement Dataset
+        link: https://github.com/your-username/your-repo-name # Replace with your actual link
+        quote: >
+          "Exploratory data analysis is crucial for understanding any dataset. This project allowed me to dive deep into an advertising dataset and build predictive models."
+        description: |
+          I learned several skills through this project, including:
+          - <mark>Pandas</mark>
+          - <mark>Numpy</mark>
+          - <mark>Linear Regression</mark>
+          - <mark>Matplotlib</mark>
+      - layout: top-middle
+        title: Detailed Time Series Analysis on Solar Energy Dataset
+        link: https://github.com/your-username/your-repo-name # Replace with your actual link
+        quote: >
+          "Analyzing time series data is essential in many fields, including renewable energy. This project helped me develop my skills in time series forecasting."
+        description: |
+          I learned several skills through this project, including:
+          - <mark>EDA</mark>
+          - <mark>Arima</mark>
+          - <mark>SArima models</mark>
+          - <mark>Numpy</mark>
+          - <mark>Pandas</mark>
+  
+  - title: Experience 
+    layout: list
+    content:
+      - layout: left
+        title: DFKI
+        link: dfki.de 
+        sub_title: AI Research Assistant
+        caption: April 2022 - Present
+        description: | 
+          - Developed and implemented NLP-driven automation solutions that processed over 1000+ complex documents, reducing processing time for enterprise clients (e.g., Siemens, Beko).
+          - Designed and built an AI-powered student assistant using RAG, LLMs, and OpenAI API.
+          - Collaborated on AI model deployment pipelines, ensuring scalability and optimization for real-world applications.
+      - layout: left
+        title: University Of Saarland
+        link: https://www.uni-saarland.de/en/home.html 
+        sub_title: Software Developer
+        caption: August 2023 - Present
+        description: |
+          - Led the development and optimization of a Python Django-based linguistic experiment platform for 1000+ active users, launching 10+ new experiments and maintaining 5 existing projects with a focus on code quality and performance.
+      - layout: left
+        title: Love For Data
+        link: https://lovefordata.com/  # Replace with actual link if available
+        sub_title: AI Engineer
+        caption: December 2020 - September 2021
+        description: |
+          - Developed an Information Retrieval system for the banking sector, enabling access to 10,000+ legal regulations with a 34% improvement in search relevance using Statistical Models and Transformer Deep Learning Models.
+          - Built a Query Recommendation module using Document Clustering and NER, improving query accuracy by 45% and precision by 30%; integrated Elasticsearch for efficient document indexing and real-time retrieval. 
+      - layout: left
+        title: Systems Limited
+        link: https://www.systemsltd.com/ 
+        sub_title: Software Engineer
+        caption: June 2019 - November 2020
+        description: |
+          - Supervised a team on multiple projects, including customer offer promotion and delivery systems. Remodelled and optimised implementation, achieving a 28% improvement in performance and a 7% reduction in false recommendations.
+
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: Saarland University 
+        link: https://www.uni-saarland.de/en/home.html
+        caption: October 2021 - Present
+        sub_title: Master's in Language Science and Technology
+        description: | 
+          Thesis: Created datasets for Urdu and Roman Urdu Information Retrieval using MT model and built a transformer-based transliteration pipeline. Designed Dense Retrieval baselines with mT5 and deep learning models, addressing data scarcity and enabling low-resource IR advancements. 
+      - layout: left
+        title: FAST NUCES 
+        link: https://nu.edu.pk/ 
+        caption: July 2015 - June 2019
+        sub_title: Bachelor's in Computer Science
+        description: | 
+          Thesis: Implemented a neural-based IR system with Elasticsearch, FAISS, and embeddings from Word2Vec, LSTM, and BERT as part of my Bachelor's thesis. Achieved 2nd position among 300 projects in a university-wide competition.
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+      - Rock climbing
+      - Gaming
+      - Knitting
+      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+
+      Look at this cool image  
+      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
