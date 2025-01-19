@@ -1,3 +1,11 @@
+<div style="text-align: center; margin-bottom: 20px; padding: 10px 0; background-color: #f8f9fa; position: sticky; top: 0; z-index: 1000;">
+  <a href="#experience" style="margin: 0 15px; text-decoration: none; color: #333;">Experience</a>
+  <a href="#education" style="margin: 0 15px; text-decoration: none; color: #333;">Education</a>
+  <a href="#publications" style="margin: 0 15px; text-decoration: none; color: #333;">Publications</a>
+  <a href="#skills" style="margin: 0 15px; text-decoration: none; color: #333;">Skills</a>
+  <a href="#projects" style="margin: 0 15px; text-decoration: none; color: #333;">Projects</a>
+</div>
+
 # Site
 repository: sproogen/resume-theme
 favicon: images/favicon.ico
@@ -50,13 +58,6 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile2.JPG
 about_content: | # this will include new lines to allow paragraphs
-  <div style="text-align: center; margin-bottom: 20px; padding: 10px 0; background-color: #f8f9fa; position: sticky; top: 0; z-index: 1000;">
-    <a href="#experience" style="margin: 0 15px; text-decoration: none; color: #333;">Experience</a>
-    <a href="#education" style="margin: 0 15px; text-decoration: none; color: #333;">Education</a>
-    <a href="#publications" style="margin: 0 15px; text-decoration: none; color: #333;">Publications</a>
-    <a href="#skills" style="margin: 0 15px; text-decoration: none; color: #333;">Skills</a>
-    <a href="#projects" style="margin: 0 15px; text-decoration: none; color: #333;">Projects</a>
-  </div>
 
 
   Hi, I'm Umer Butt, an AI Research Assistant at DFKI with expertise in Natural Language Processing and Machine Learning. I specialize in developing NLP-driven automation solutions and AI-powered systems. With a strong background in software development and AI engineering, I've worked on various projects involving RAG, LLMs, and information retrieval systems.
