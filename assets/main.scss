@@ -4,11 +4,6 @@
 
 @import 'modern-resume-theme';
 
-// Test style to verify CSS is loading
-body {
-    border: 5px solid red !important;
-}
-
 // Container for Trees images
 p:has(img[alt="Trees"]) {
     display: flex !important;
