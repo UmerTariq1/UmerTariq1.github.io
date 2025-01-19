@@ -165,6 +165,7 @@ content:
   - title: Skills & Expertise 💪
     layout: text
     content: |
+      <center>
       🔧 Technical Skills<br>
          ├─ Languages<br>
          │  ├─ Python, Java, C++<br>
@@ -193,6 +194,7 @@ content:
          ├─ Data-driven decision making<br>
          ├─ Pattern recognition<br>
          └─ Clear communication
+      </center>
 
   - title: Projects 💡
     layout: list 
