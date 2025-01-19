@@ -9,21 +9,19 @@ body {
     border: 5px solid red !important;
 }
 
-// More specific image targeting
-img[alt="Trees"] {
-    border: 5px solid red !important;
-    max-width: 300px !important;
-    height: auto !important;      
-    display: block !important;    
-    margin: 20px 0 !important;    
+// Container for Trees images
+p:has(img[alt="Trees"]) {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    justify-content: flex-start !important;
 }
 
-// Even more specific if needed
-.layout .details img[alt="Trees"],
-.content img[alt="Trees"] {
-    border: 5px solid rgb(0, 255, 72) !important;
+// Image styling
+img[alt="Trees"] {
     max-width: 300px !important;
     height: auto !important;      
     display: block !important;    
-    margin: 20px 0 !important;    
+    margin: 0 !important;    
+    flex: 0 0 auto !important;
 }
