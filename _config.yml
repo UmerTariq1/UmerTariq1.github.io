@@ -55,7 +55,7 @@ about_content: | # this will include new lines to allow paragraphs
 
 content:
 
-  - title: Experience 
+  - title: Experience 👔
     layout: list
     content:
       - layout: left
@@ -94,8 +94,7 @@ content:
         description: |
           - Supervised a team on multiple projects, including customer offer promotion and delivery systems. Remodelled and optimised implementation, achieving a  <mark> 28%</mark>   improvement in performance and a  <mark> 7%</mark>   reduction in false recommendations. Worked on  <mark> Java</mark>   and  <mark> Sprint Boot</mark>  .
 
-
-  - title: Education
+  - title: Education 📚
     layout: list
     content:
       - layout: left
@@ -114,7 +113,7 @@ content:
         description: | 
           Thesis: Implemented a neural-based IR system with Elasticsearch, FAISS, and embeddings from Word2Vec, LSTM, and BERT as part of my Bachelor's thesis. Achieved 2nd position among 300 projects in a university-wide competition.
 
-  - title: Publications
+  - title: Publications 📝
     layout: list
     content:
       - layout: left
@@ -162,17 +161,39 @@ content:
           
           Created and analyzed a corpus of children's stories from various cultures.
 
-  
-  - title: Skills & Expertise
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      - **Languages**: Python, Java, C, C++, JS, HTML, CSS, SQL, NoSQL
-      - **Frameworks & Tools**: PyTorch, Pandas, Scikit-Learn, Huggingface, XGBoost, Git, MongoDB, ElasticSearch, TensorFlow
-      - **Other Skills**: RAG, OpenAI API, Agile development, Data pipelines, Docker
-      - **Soft Skills**: Problem-solving, Pattern Recognition, Clear Communication
+  - title: Skills & Expertise 💪
+    layout: list
+    content: |
+      🔧 Technical Skills
+         ├─ Languages
+         │  ├─ Python, Java, C++
+         │  ├─ JavaScript, HTML, CSS
+         │  └─ SQL, NoSQL
+         │
+         ├─ AI & ML Tools 🤖
+         │  ├─ PyTorch, TensorFlow
+         │  ├─ Scikit-learn, XGBoost
+         │  ├─ Hugging Face, RAG
+         │  └─ OpenAI API
+         │
+         ├─ Data Engineering 📊
+         │  ├─ MongoDB, Elasticsearch
+         │  ├─ Pandas, NumPy
+         │  ├─ Data Pipelines
+         │  └─ Matplotlib
+         │
+         └─ DevOps Tools ⚙️
+            ├─ Git, Docker
+            ├─ FastAPI
+            └─ REST APIs
 
+      👥 Professional Skills
+         ├─ Problem-solving
+         ├─ Data-driven decision making
+         ├─ Pattern recognition
+         └─ Clear communication
 
-  - title: Projects 
+  - title: Projects 💡
     layout: list 
     content:
       - layout: top-middle
