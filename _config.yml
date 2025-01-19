@@ -162,37 +162,39 @@ content:
           
           Created and analyzed a corpus of children's stories from various cultures.
 
-  - title: Skills & Expertise 💪
+  - title: <div id="skills">Skills & Expertise 💪</div>
     layout: list
-    content: |
-      🔧 Technical Skills
-         ├─ Languages
-         │  ├─ Python, Java, C++
-         │  ├─ JavaScript, HTML, CSS
-         │  └─ SQL, NoSQL
-         │
-         ├─ AI & ML Tools 🤖
-         │  ├─ PyTorch, TensorFlow
-         │  ├─ Scikit-learn, XGBoost
-         │  ├─ Hugging Face, RAG
-         │  └─ OpenAI API
-         │
-         ├─ Data Engineering 📊
-         │  ├─ MongoDB, Elasticsearch
-         │  ├─ Pandas, NumPy
-         │  ├─ Data Pipelines
-         │  └─ Matplotlib
-         │
-         └─ DevOps Tools ⚙️
-            ├─ Git, Docker
-            ├─ FastAPI
-            └─ REST APIs
+    content:
+      - layout: text
+        description: |
+          🔧 Technical Skills
+             ├─ Languages
+             │  ├─ Python, Java, C++
+             │  ├─ JavaScript, HTML, CSS
+             │  └─ SQL, NoSQL
+             │
+             ├─ AI & ML Tools 🤖
+             │  ├─ PyTorch, TensorFlow
+             │  ├─ Scikit-learn, XGBoost
+             │  ├─ Hugging Face, RAG
+             │  └─ OpenAI API
+             │
+             ├─ Data Engineering 📊
+             │  ├─ MongoDB, Elasticsearch
+             │  ├─ Pandas, NumPy
+             │  ├─ Data Pipelines
+             │  └─ Matplotlib
+             │
+             └─ DevOps Tools ⚙️
+                ├─ Git, Docker
+                ├─ FastAPI
+                └─ REST APIs
 
-      👥 Professional Skills
-         ├─ Problem-solving
-         ├─ Data-driven decision making
-         ├─ Pattern recognition
-         └─ Clear communication
+          👥 Professional Skills
+             ├─ Problem-solving
+             ├─ Data-driven decision making
+             ├─ Pattern recognition
+             └─ Clear communication
 
   - title: Projects 💡
     layout: list 
@@ -289,7 +291,6 @@ content:
       ![Trees](images/cool1.jpg "Trees")
       ![Trees](images/cool2.jpg "Trees")
       ![Trees](images/cool3.jpg "Trees")
-      ![Trees](images/cool4.jpg "Trees")
 
 # Footer
 footer_show_references: true
