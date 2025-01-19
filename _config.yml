@@ -255,7 +255,7 @@ content:
         title: Automated web scraping of Canada411.ca to extract contact records
         link: https://github.com/UmerTariq1/Canada411.ca-Scrapper
         quote: >
-          "#TODO"
+          "Automated contact record extraction from Canada411.ca using Python and web scraping techniques"
         description: |
           I learned several skills through this project, including:
            <mark> Python</mark>    |   <mark> beautifulSoup</mark>    |   <mark> Data Extraction</mark>  
