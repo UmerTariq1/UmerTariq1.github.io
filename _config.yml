@@ -165,33 +165,33 @@ content:
   - title: Skills & Expertise 💪
     layout: text
     content: |
-      🔧 Technical Skills
-         ├─ Languages
-         │  ├─ Python, Java, C++
-         │  ├─ JavaScript, HTML, CSS
-         │  └─ SQL, NoSQL
-         │
-         ├─ AI & ML Tools 🤖
-         │  ├─ PyTorch, TensorFlow
-         │  ├─ Scikit-learn, XGBoost
-         │  ├─ Hugging Face, RAG
-         │  └─ OpenAI API
-         │
-         ├─ Data Engineering 📊
-         │  ├─ MongoDB, Elasticsearch
-         │  ├─ Pandas, NumPy
-         │  ├─ Data Pipelines
-         │  └─ Matplotlib
-         │
-         └─ DevOps Tools ⚙️
-            ├─ Git, Docker
-            ├─ FastAPI
-            └─ REST APIs
-
-      👥 Professional Skills
-         ├─ Problem-solving
-         ├─ Data-driven decision making
-         ├─ Pattern recognition
+      🔧 Technical Skills<br>
+         ├─ Languages<br>
+         │  ├─ Python, Java, C++<br>
+         │  ├─ JavaScript, HTML, CSS<br>
+         │  └─ SQL, NoSQL<br>
+         │<br>
+         ├─ AI & ML Tools 🤖<br>
+         │  ├─ PyTorch, TensorFlow<br>
+         │  ├─ Scikit-learn, XGBoost<br>
+         │  ├─ Hugging Face, RAG<br>
+         │  └─ OpenAI API<br>
+         │<br>
+         ├─ Data Engineering 📊<br>
+         │  ├─ MongoDB, Elasticsearch<br>
+         │  ├─ Pandas, NumPy<br>
+         │  ├─ Data Pipelines<br>
+         │  └─ Matplotlib<br>
+         │<br>
+         └─ DevOps Tools ⚙️<br>
+            ├─ Git, Docker<br>
+            ├─ FastAPI<br>
+            └─ REST APIs<br>
+      <br><br>
+      👥 Professional Skills<br>
+         ├─ Problem-solving<br>
+         ├─ Data-driven decision making<br>
+         ├─ Pattern recognition<br>
          └─ Clear communication
 
   - title: Projects 💡
