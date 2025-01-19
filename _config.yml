@@ -33,11 +33,11 @@ googlescholar_username: citations?hl=en&user=rJY5sboAAAAJ
 
 # Additional icon links
 additional_links:
-- title: Pdf Download
+- title: Download resume
   icon: far fa-file-pdf
   url: https://github.com/UmerTariq1/UmerTariq1.github.io/tree/main/resources/cv_UmerButt.pdf
 
-- title: itsgoingto.be
+- title: Youtube
   icon: fas fa-globe
   url: https://www.youtube.com/watch?v=xvFZjo5PgG0
 
