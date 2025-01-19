@@ -12,3 +12,16 @@ img[alt="Trees"] {
     display: inline-block !important; /* Change to inline-block */ 
     margin: 20px 10px !important; /* Add horizontal margin */ 
 }
+
+
+// Link styling - targeting the specific link attribute
+a[href^="http"] {
+    color: #007bff !important;  // Bootstrap blue
+    text-decoration: none !important;  // Remove underline
+}
+
+// Hover state for links
+a[href^="http"]:hover {
+    color: #0056b3 !important;  // Darker blue on hover
+    text-decoration: underline !important;  // Add underline on hover
+}
