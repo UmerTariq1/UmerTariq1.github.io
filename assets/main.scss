@@ -45,6 +45,10 @@ a[href^="http"]:hover {
     content: "Download my resume (PDF)" !important;
 }
 
+.header-right a[href*="youtube.com"]::after {
+    content: "Wanna see something cool?" !important;
+}
+
 // General tooltip styling
 .header-right a {
     position: relative !important;
