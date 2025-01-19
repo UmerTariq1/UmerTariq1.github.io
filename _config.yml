@@ -33,9 +33,14 @@ googlescholar_username: citations?hl=en&user=rJY5sboAAAAJ
 
 # Additional icon links
 additional_links:
+- title: Pdf Download
+  icon: far fa-file-pdf
+  url: https://github.com/UmerTariq1/UmerTariq1.github.io/tree/main/resources/cv_UmerButt.pdf
+
 - title: itsgoingto.be
   icon: fas fa-globe
   url: https://www.youtube.com/watch?v=xvFZjo5PgG0
+
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -269,9 +274,6 @@ content:
         description: |
           I learned several skills through this project, including:
            <mark> Python</mark>    |   <mark> beautifulSoup</mark>    |   <mark> Data Extraction<mark>  
-
-
-
 
   - title: A Little More About Me 🙋‍♂️
     layout: text
