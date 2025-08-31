@@ -1,0 +1,147 @@
+name: Umer Butt
+contact:
+  phone: +49 1577 3677 910
+  email: mumertbutt@gmail.com
+  linkedin: umertariq1
+  github: UmerTariq1
+  website: true
+  location: Germany
+summary: >
+  Experienced AI engineer (5+ years) specializing in NLP and Information Retrieval.
+  Proven ability to develop and deploy AI solutions, including generative AI, with a track record of success (34% search relevance improvement in banking IR system) in both industry and research.
+  Seeking to leverage deep learning and LLM expertise for impactful AI projects.
+work_experience:
+  - company: Sequire Technology GmbH, Germany
+    position: AI Software Engineer
+    dates: August 2025 - Present
+    responsibilities:
+      - Conducting R&D on large language model (LLM) security, focusing on pen testing, vulnerabilities, harmfulness, and toxicity.
+      - Developed and implemented a Retrieval-Augmented Generation (RAG) application utilizing both local and cloud-API-based LLMs.
+  - company: IMC AG, Saarbrucken, Germany
+    position: AI Software Developer (Werkstudent)
+    dates: January 2025 - June 2025
+    responsibilities:
+      - Leading the development of an LLM-powered IR platform to enhance client support workflows, using Python, React, Docker, and Grafana for scalable search and monitoring.
+  - company: DFKI, Saarbrucken, Germany
+    position: AI Research Assistant
+    dates: April 2022 - December 2024
+    responsibilities:
+      - Developed and implemented NLP-driven automation solutions that processed over 1000+ complex documents, reducing processing time for enterprise clients (e.g., Siemens, Beko).
+      - Designed and built an AI-powered student assistant using RAG, LLMS, and OpenAI API.
+      - Collaborated on AI model deployment pipelines, ensuring scalability and optimization for real-world applications.
+  - company: Love For Data
+    position: AI Engineer
+    dates: December 2020 - September 2021
+    responsibilities:
+      - Developed an Information Retrieval system for the banking sector, enabling access to 10,000+ legal regulations with a 34% improvement in search relevance using Statistical Models and Transformer Deep Learning Models.
+      - Built a Query Recommendation module using Document Clustering and NER, improving query accuracy by 45% and precision by 30%.
+      - Integrated Elasticsearch for efficient document indexing and real-time retrieval.
+  - company: Systems Limited
+    position: Software Engineer
+    dates: June 2019 - November 2020
+    responsibilities:
+      - Supervised a team on multiple projects, including customer offer promotion and delivery systems.
+      - Remodelled and optimised implementation, achieving a 28% improvement in performance and a 7% reduction in false recommendations.
+education:
+  - degree: Master's in Language Science and Technology
+    university: Saarland University
+    dates: October 2021 - July 2025
+    thesis: Created datasets for Urdu and Roman Urdu Information Retrieval using an MT model and built a transformer-based transliteration pipeline.
+  - degree: Bachelor's in Computer Science
+    university: FAST NUCES
+    dates: July 2015 - June 2019
+    thesis: Implemented a neural-based IR system with Elasticsearch, FAISS, and embeddings from Word2Vec, LSTM, and BERT as part of a Bachelor's thesis.
+    awards: Achieved 2nd position among 300 projects in a university-wide competition.
+skills:
+  languages:
+    - Python
+    - Java
+    - C++
+    - JavaScript
+    - SQL
+    - HTML
+    - CSS
+    - NOSQL
+  frameworks_and_libraries:
+    - PyTorch
+    - TensorFlow
+    - Huggingface
+    - Scikit-learn
+    - Spacy
+    - Pandas
+    - Numpy
+    - Matplotlib
+  ai_and_nlp_tools:
+    - RAG
+    - OpenAI API
+    - Transformers
+    - Vector Search
+    - Elasticsearch
+    - FAISS
+    - Langchain
+  infrastructure_and_devops:
+    - Git/GitHub
+    - Docker
+    - CI/CD
+    - Data Pipelines
+    - UNIX/Linux
+    - AWS
+    - GCP
+  development_practices:
+    - Agile
+    - Clean Code
+    - Experiment Tracking
+    - Model Evaluation
+    - Data Logging
+  soft_skills:
+    - Communication
+    - Problem-solving
+    - Adaptability
+    - Ownership
+    - Collaboration
+projects:
+  - name: RAG LLM chatbot with external knowledge source
+    technologies: Python, Llama3, Huggingface, Streamlit
+  - name: Graph-based Cloud Troubleshooting RAG Assistant
+    technologies: Neo4j, Llama3, LangChain, Streamlit
+  - name: AI Tool for Digital Persona Classification from Social Data
+    technologies: Python, Transformers, Streamlit, OpenAI, Spacy
+  - name: Deep IR System Using Context-Aware Vector Representations
+    technologies: FAISS, LSTM, BERT, Elastic Search
+  - name: Lyrics Generator using LLMs and its website
+    technologies: Python, OpenAI API, Langchain API, Angular, Django
+  - name: Detailed Time Series Analysis on Solar Energy Dataset
+    technologies: EDA, Arima, SArima models, Numpy, Pandas
+publications:
+  - title: Building the First IR Dataset and Baseline for Roman Urdu as a Low-Resource Language
+    venue: RANLP @ LowResNLPT
+    year: 2025
+    authors: Umer Butt, S.Varanasi, G.Neumann
+  - title: AIDEN: Automatic Speaker Notes Creation and Navigation for Enhancing Online Learning Experience
+    venue: RANLP
+    year: 2025
+    authors: S.Varanasi, Umer Butt, G.Neumann, Josef van Genabith
+  - title: Low-Resource Transliteration for Roman-Urdu and Urdu Using Transformer-Based Models
+    venue: NAACL @ LoResMT
+    year: 2025
+    authors: Umer Butt, S.Varanasi, G.Neumann
+  - title: Enabling Low-Resource Language Retrieval: Establishing Baselines for Urdu MS MARCO
+    venue: ECIR
+    year: 2024
+    authors: Umer Butt, S.Varanasi, G.Neumann
+  - title: Cross-Linguistic Processing of Non-Compositional Expressions in Slavic Languages
+    venue: Cog-Alex
+    year: 2024
+    authors: I.Zaitova, I.Stenger, Umer Butt, T.Avgustinova
+  - title: Spatial-Economic Analysis for Optimal Electric Vehicle Charging Station Placement
+    venue: SASI-ITE
+    year: 2024
+    authors: A.Maurya, C.Agnes, B.Baloch, S.Anwari, Umer Butt (equal contrib)
+  - title: AutoQIR: Auto-Encoding Questions with Retrieval Augmented Decoding for Unsupervised Passage Retrieval and Zero-shot Question Generation
+    venue: RANLP
+    year: 2023
+    authors: S.Varanasi, Umer Butt, G.Neumann
+  - title: Fairy Tales / Children Stories of the World: Corpus Organization and Text Analytics
+    venue: ICLAP
+    year: 2021
+    authors: Y.Khan, Umer Butt
