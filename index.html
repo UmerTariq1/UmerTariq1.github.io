@@ -254,6 +254,7 @@ highlights:
   - AWS
 experience:
   - company: Sequire Technology GmbH
+    url: https://sequire.de/
     role: AI Software Engineer
     location: Germany
     start: Aug 2025
@@ -269,6 +270,7 @@ experience:
       - LangChain
       - Docker
   - company: IMC AG
+    url: https://www.scheer-imc.com/de/
     role: AI Software Developer (Werkstudent)
     location: Saarbrucken, Germany
     start: Jan 2025
@@ -283,6 +285,7 @@ experience:
       - Docker
       - Grafana
   - company: DFKI
+    url: https://www.dfki.de/web
     role: AI Research Assistant
     location: Saarbrucken, Germany
     start: Apr 2022
@@ -298,6 +301,7 @@ experience:
       - OpenAI API
       - Python
   - company: Love For Data
+    url: https://www.lovefordata.com/
     role: AI Engineer
     location: Pakistan
     start: Dec 2020
@@ -314,6 +318,7 @@ experience:
       - NER
       - Clustering
   - company: Systems Limited
+    url: https://www.systemsltd.com/PK
     role: Software Engineer
     location: Pakistan
     start: Jun 2019
@@ -364,13 +369,6 @@ projects:
       - LSTM
       - BERT
       - Elasticsearch
-  - name: Lyrics Generator using LLMs and website
-    tags:
-      - Python
-      - OpenAI API
-      - LangChain
-      - Angular
-      - Django
   - name: Time Series Analysis on Solar Energy Dataset
     tags:
       - EDA
@@ -410,12 +408,12 @@ skills:
         level: 5
       - name: Java
         level: 4
-      - name: C++
-        level: 3
       - name: JavaScript
         level: 4
       - name: SQL
         level: 4
+      - name: C++
+        level: 3
       - name: HTML
         level: 3
       - name: CSS
@@ -424,42 +422,38 @@ skills:
         level: 3
   - category: Frameworks & Libraries
     items:
+      - name: Pandas
+        level: 5
       - name: PyTorch
         level: 4
-      - name: TensorFlow
-        level: 3
       - name: Hugging Face
         level: 4
       - name: Scikit-learn
         level: 4
       - name: SpaCy
         level: 4
-      - name: Pandas
-        level: 5
-      - name: NumPy
-        level: 5
-      - name: Matplotlib
-        level: 4
+      - name: TensorFlow
+        level: 3
   - category: AI & NLP Tools
     items:
       - name: RAG
-        level: 4
+        level: 5
       - name: OpenAI API
-        level: 4
+        level: 5
       - name: Transformers
-        level: 4
+        level: 5
       - name: Vector Search
-        level: 4
-      - name: Elasticsearch
-        level: 4
+        level: 5
       - name: FAISS
-        level: 4
+        level: 5
+      - name: Elasticsearch
+        level: 5
       - name: LangChain
         level: 4
   - category: Infrastructure & DevOps
     items:
       - name: Git/GitHub
-        level: 5
+        level: 4
       - name: Docker
         level: 4
       - name: CI/CD
@@ -475,15 +469,15 @@ skills:
   - category: Development Practices
     items:
       - name: Agile
-        level: 4
+        level: 5
       - name: Clean Code
-        level: 4
+        level: 5
       - name: Experiment Tracking
-        level: 4
+        level: 5
       - name: Model Evaluation
-        level: 4
+        level: 5
       - name: Data Logging
-        level: 4
+        level: 5
   - category: Soft Skills
     items:
       - name: Communication
@@ -499,6 +493,7 @@ skills:
 education:
   - degree: Master's in Language Science and Technology
     institution: Saarland University
+    url: https://www.uni-saarland.de/en/home.html
     location: Saarbrucken, Germany
     start: 2021
     end: 2025
@@ -507,6 +502,7 @@ education:
       - Built a transformer-based transliteration pipeline.
   - degree: Bachelor's in Computer Science
     institution: FAST NUCES
+    url: https://khi.nu.edu.pk/
     location: Pakistan
     start: 2015
     end: 2019
@@ -748,10 +744,20 @@ publications:
 				const title = create('div', '');
 				const role = create('h3', 'text-base md:text-lg font-semibold text-gray-900');
 				role.textContent = `${job.role || ''}`;
-				const company = create('p', 'text-gray-600');
-				company.textContent = `${job.company || ''}${job.location ? ' · ' + job.location : ''}`;
-				title.appendChild(role);
-				title.appendChild(company);
+				if (job.url) {
+					const companyLink = create('a', 'text-blue-500 hover:text-blue-600 font-medium transition-colors');
+					companyLink.href = job.url;
+					companyLink.target = '_blank';
+					companyLink.rel = 'noopener noreferrer';
+					companyLink.textContent = `${job.company || ''}${job.location ? ' · ' + job.location : ''}`;
+					title.appendChild(role);
+					title.appendChild(companyLink);
+				} else {
+					const company = create('p', 'text-gray-600');
+					company.textContent = `${job.company || ''}${job.location ? ' · ' + job.location : ''}`;
+					title.appendChild(role);
+					title.appendChild(company);
+				}
 
 				const meta = create('div', 'text-sm text-gray-500 whitespace-nowrap');
 				const range = `${job.start || ''} — ${job.end || 'Present'}`;
@@ -853,15 +859,28 @@ publications:
 				const title = create('h3', 'text-base md:text-lg font-semibold text-gray-900');
 				title.textContent = `${ed.degree || ''}`;
 
-				const org = create('p', 'text-gray-600 mt-1');
-				org.textContent = `${ed.institution || ''}${ed.location ? ' · ' + ed.location : ''}`;
-
-				const meta = create('p', 'text-sm text-gray-500 mt-1');
-				meta.textContent = `${ed.start || ''} — ${ed.end || ''}`;
-
-				card.appendChild(title);
-				card.appendChild(org);
-				card.appendChild(meta);
+				if (ed.url) {
+					const institutionLink = create('a', 'text-blue-500 hover:text-blue-600 font-medium transition-colors mt-1 block');
+					institutionLink.href = ed.url;
+					institutionLink.target = '_blank';
+					institutionLink.rel = 'noopener noreferrer';
+					institutionLink.textContent = `${ed.institution || ''}${ed.location ? ' · ' + ed.location : ''}`;
+					const org = create('p', 'text-gray-600 mt-1');
+					org.appendChild(institutionLink);
+					const meta = create('p', 'text-sm text-gray-500 mt-1');
+					meta.textContent = `${ed.start || ''} — ${ed.end || ''}`;
+					card.appendChild(title);
+					card.appendChild(org);
+					card.appendChild(meta);
+				} else {
+					const org = create('p', 'text-gray-600 mt-1');
+					org.textContent = `${ed.institution || ''}${ed.location ? ' · ' + ed.location : ''}`;
+					const meta = create('p', 'text-sm text-gray-500 mt-1');
+					meta.textContent = `${ed.start || ''} — ${ed.end || ''}`;
+					card.appendChild(title);
+					card.appendChild(org);
+					card.appendChild(meta);
+				}
 
 				if ((ed.details || []).length) {
 					const ul = create('ul', 'mt-3 space-y-2');
