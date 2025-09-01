@@ -35,6 +35,13 @@ UmerTariq1.github.io/
 └── README.md              # This file
 ```
 
+## 🧭 Configuration & Recent Improvements
+
+- **Social icons**: Uses Font Awesome via CDN. Links are rendered through the `buttonLink` helper in `index.html` which prepends icons, adds accessible labels, and ensures visible focus states. Footer now includes GitHub and LinkedIn links.
+- **Sidebar order**: Controlled by a single `NAV_ITEMS` array in `index.html` (Tabs & Navigation section). The sidebar is generated from this array, and `TABS` is derived from it.
+- **Skills progress bars**: Levels are defined in the embedded `RESUME_YAML` under `skills.items[].level` (0–5). The progress bars animate on first render and expose `role="progressbar"` with proper ARIA attributes.
+- **Mobile sidebar toggle**: Visibility ensured by raising the mobile header z-index (now `z-50`). The button has appropriate ARIA attributes and keyboard focus styles.
+
 ## 🚀 Usage
 
 ### Viewing the Portfolio
@@ -74,6 +81,10 @@ experience:
       - Technology 1
       - Technology 2
 ```
+
+## 📄 Changes Log
+
+See `docs/changes.md` for a concise summary of recent improvements and where to configure them.
 
 ## 🎨 Design Features
 

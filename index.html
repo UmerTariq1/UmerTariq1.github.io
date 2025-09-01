@@ -39,7 +39,7 @@
 	<!-- Tailwind CSS CDN -->
 	<script src="https://cdn.tailwindcss.com"></script>
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXJ6G6f6QvA3G6JtYwKQ0rj0YJrX8sC2oI9u8g9n8+oU5S9Vb3k7qf8Sx5bb2k5Xo1k+4lJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- js-yaml -->
 	<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 
@@ -65,7 +65,7 @@
 </head>
 <body class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 text-gray-800 antialiased">
 	<!-- Mobile top bar -->
-	<header class="sticky top-0 z-30 lg:hidden bg-white/90 backdrop-blur border-b border-gray-100">
+	<header class="sticky top-0 z-50 lg:hidden bg-white/90 backdrop-blur border-b border-gray-100">
 		<div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 			<div class="flex items-center gap-3">
 				<div class="h-9 w-9 rounded-xl bg-accent-600 text-white grid place-items-center shadow-smooth">
@@ -107,44 +107,7 @@
 			</div>
 
 			<!-- Navigation -->
-			<nav class="p-4 space-y-1 overflow-y-auto">
-				<a href="#summary" data-tab="summary" class="tab-link group flex items-center gap-3 px-3 py-2 rounded-xl text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500">
-					<div class="h-8 w-8 grid place-items-center rounded-lg bg-accent-50 text-accent-700 group-hover:bg-accent-100 transition">
-						<i class="fas fa-user"></i>
-					</div>
-					<span class="font-medium">Summary</span>
-				</a>
-				<a href="#experience" data-tab="experience" class="tab-link group flex items-center gap-3 px-3 py-2 rounded-xl text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500">
-					<div class="h-8 w-8 grid place-items-center rounded-lg bg-accent-50 text-accent-700 group-hover:bg-accent-100 transition">
-						<i class="fas fa-briefcase"></i>
-					</div>
-					<span class="font-medium">Experience</span>
-				</a>
-				<a href="#projects" data-tab="projects" class="tab-link group flex items-center gap-3 px-3 py-2 rounded-xl text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500">
-					<div class="h-8 w-8 grid place-items-center rounded-lg bg-accent-50 text-accent-700 group-hover:bg-accent-100 transition">
-						<i class="fas fa-code"></i>
-					</div>
-					<span class="font-medium">Projects</span>
-				</a>
-				<a href="#skills" data-tab="skills" class="tab-link group flex items-center gap-3 px-3 py-2 rounded-xl text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500">
-					<div class="h-8 w-8 grid place-items-center rounded-lg bg-accent-50 text-accent-700 group-hover:bg-accent-100 transition">
-						<i class="fas fa-wand-magic-sparkles"></i>
-					</div>
-					<span class="font-medium">Skills</span>
-				</a>
-				<a href="#education" data-tab="education" class="tab-link group flex items-center gap-3 px-3 py-2 rounded-xl text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500">
-					<div class="h-8 w-8 grid place-items-center rounded-lg bg-accent-50 text-accent-700 group-hover:bg-accent-100 transition">
-						<i class="fas fa-graduation-cap"></i>
-					</div>
-					<span class="font-medium">Education</span>
-				</a>
-				<a href="#publications" data-tab="publications" class="tab-link group flex items-center gap-3 px-3 py-2 rounded-xl text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500">
-					<div class="h-8 w-8 grid place-items-center rounded-lg bg-accent-50 text-accent-700 group-hover:bg-accent-100 transition">
-						<i class="fas fa-book-open"></i>
-					</div>
-					<span class="font-medium">Publications</span>
-				</a>
-			</nav>
+			<nav id="sidebarNav" class="p-4 space-y-1 overflow-y-auto" aria-label="Section navigation"></nav>
 
 			<!-- Sidebar footer -->
 			<div class="mt-auto p-4 border-t border-gray-100">
@@ -238,12 +201,24 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Photography -->
+			<div id="panel-photography" class="panel hidden">
+				<div class="rounded-2xl bg-white shadow-smooth border border-gray-100">
+					<div class="p-6 md:p-8">
+						<h2 class="text-xl md:text-2xl font-semibold tracking-tight">Photography</h2>
+						<p class="text-gray-600 mt-2 mb-6">Capturing the beauty of Saarland's landscapes and nature through my lens.</p>
+						<div id="photographyGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<!-- Footer -->
 		<footer class="pb-10">
 			<div class="max-w-4xl mx-auto px-4 mt-8 text-sm text-gray-500">
 				<p>&copy; <span id="year"></span> <span id="footerName">Umer Tariq</span>. All rights reserved.</p>
+				<div id="footerSocial" class="mt-3 flex items-center gap-2"></div>
 			</div>
 		</footer>
 	</main>
@@ -261,10 +236,12 @@ contact:
   website: https://umertariq1.github.io
   github: https://github.com/UmerTariq1
   linkedin: https://www.linkedin.com/in/umertariq1
+  scholar: https://scholar.google.com/citations?user=rJY5sboAAAAJ&hl=en
   resume: resources/Resume_Umer_Butt.pdf
 summary:
-  - Experienced AI engineer (5+ years) specializing in NLP and Information Retrieval.
+  - As an AI engineer, I'm fascinated by the challenge of making sense of complex data. For over <strong>  5 years </strong>, I've specialized in NLP and Information Retrieval, and my work has centered on creating intelligent, user-friendly solutions powered by deep learning and LLMs. I love turning a tricky problem into a streamlined, effective application that just works.
   - Seeking to leverage deep learning and LLM expertise for impactful AI projects.
+  - When I'm not immersed in the world of AI, you'll find me exploring the outdoors with my camera in hand. I'm an avid hiker and photographer, often capturing the landscapes of the beautiful Saarland countryside. This passion for observation and creativity is a great counterpoint to my technical work. When I need to unwind, I enjoy the friendly competition of a badminton match or a board game night with friends. <a href="#photography" class="text-blue-500 hover:text-blue-600 font-medium">Check out my photography work</a>.
 highlights:
   - Python
   - NLP
@@ -299,6 +276,7 @@ experience:
     summary: Led LLM-powered IR platform for client support workflows.
     achievements:
       - Built an LLM-powered IR platform using Python, React, Docker, and Grafana for search and monitoring.
+      - Developed and deployed an AI-powered solution draft generator and a local LLM-based effort estimation module, which streamlined ticket resolve and provided new clients with informed project projections.
     stack:
       - Python
       - React
@@ -400,6 +378,31 @@ projects:
       - SARIMA
       - NumPy
       - Pandas
+  - name: Lyrics Generator using LLMs and its website
+    tags:
+      - Python
+      - OpenAI API
+      - Langchain
+      - Angular
+      - Django
+    links:
+      - label: GitHub
+        icon: fab fa-github
+        url: https://github.com/UmerTariq1/Lyrics-Analysis-and-Generation
+  - name: Vector Balls A Dynamic Physics-Based Survival Game
+    tags:
+      - HTML
+      - JavaScript
+      - Python
+      - PyGame
+    links:
+      - label: GitHub
+        icon: fab fa-github
+        url: https://github.com/UmerTariq1/Vector-Balls
+      - label: Website
+        icon: fab fa-solid fa-link
+        url: https://umertariq1.github.io/Vector-Balls/
+
 skills:
   - category: Languages
     items:
@@ -529,6 +532,7 @@ publications:
   - title: "Low-Resource Transliteration for Roman-Urdu and Urdu Using Transformer-Based Models"
     venue: NAACL @ LoResMT
     year: 2025
+    link: "https://aclanthology.org/2025.loresmt-1.13/"
     authors:
       - Umer Butt
       - S. Varanasi
@@ -536,6 +540,7 @@ publications:
   - title: "Enabling Low-Resource Language Retrieval: Establishing Baselines for Urdu MS MARCO"
     venue: ECIR
     year: 2024
+    link: "https://arxiv.org/abs/2412.12997"
     authors:
       - Umer Butt
       - S. Varanasi
@@ -543,6 +548,7 @@ publications:
   - title: "Cross-Linguistic Processing of Non-Compositional Expressions in Slavic Languages"
     venue: Cog-Alex
     year: 2024
+    link: "https://aclanthology.org/2024.cogalex-1.10/"
     authors:
       - I. Zaitova
       - I. Stenger
@@ -551,6 +557,7 @@ publications:
   - title: "Spatial-Economic Analysis for Optimal Electric Vehicle Charging Station Placement"
     venue: SASI-ITE
     year: 2024
+    link: "https://ieeexplore.ieee.org/abstract/document/10607132"
     authors:
       - A. Maurya
       - C. Agnes
@@ -561,6 +568,7 @@ publications:
   - title: "AutoQIR: Auto-Encoding Questions with Retrieval Augmented Decoding for Unsupervised Passage Retrieval and Zero-shot Question Generation"
     venue: RANLP
     year: 2023
+    link: "https://aclanthology.org/2023.ranlp-1.124.pdf"
     authors:
       - S. Varanasi
       - Umer Butt
@@ -568,6 +576,7 @@ publications:
   - title: "Fairy Tales / Children Stories of the World: Corpus Organization and Text Analytics"
     venue: ICLAP
     year: 2021
+    link: "https://www.researchgate.net/publication/354381634_Classic_Fairy_Tales_Children_Stories_of_the_World_Corpus_Organization_and_Text_Analytics"
     authors:
       - Y. Khan
       - Umer Butt
@@ -602,16 +611,28 @@ publications:
 				: 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50 focus-visible:ring-accent-600';
 			const a = create('a', `${base} ${styles}`);
 			a.href = url;
-			a.innerHTML = `${icon ? `<i class="${icon}"></i>` : ''}<span>${label}</span>`;
+			a.setAttribute('aria-label', label);
+			a.innerHTML = `${icon ? `<i class="${icon}" aria-hidden="true"></i>` : ''}<span>${label}</span>`;
 			return externalize(a);
 		}
 
-		function progressBar(level, max = 5) {
+		function progressBar(level, max = 5, name = '') {
 			const pct = Math.round((clamp(level, 0, max) / max) * 100);
 			const wrap = create('div', 'mt-2 h-2.5 w-full bg-gray-100 rounded-full overflow-hidden');
-			const bar = create('div', 'h-full bg-accent-500 rounded-full transition-all', '');
-			bar.style.width = pct + '%';
+			wrap.setAttribute('role', 'progressbar');
+			wrap.setAttribute('aria-valuemin', '0');
+			wrap.setAttribute('aria-valuemax', '100');
+			wrap.setAttribute('aria-valuenow', String(pct));
+			if (name) wrap.setAttribute('aria-label', `${name} proficiency ${pct}%`);
+			const bar = create('div', 'h-full bg-blue-500 rounded-full', '');
+			bar.style.width = '0%';
+			bar.style.transition = 'width 900ms ease-out';
+			requestAnimationFrame(() => {
+				requestAnimationFrame(() => { bar.style.width = pct + '%'; });
+			});
+			const sr = create('span', 'sr-only', name ? `${name} - ${pct}%` : `${pct}%`);
 			wrap.appendChild(bar);
+			wrap.appendChild(sr);
 			return wrap;
 		}
 
@@ -654,9 +675,9 @@ publications:
 			quick.innerHTML = '';
 			const links = [
 				{ icon: 'fas fa-envelope', label: 'Email', url: data?.contact?.email ? `mailto:${data.contact.email}` : null },
-				{ icon: 'fas fa-link', label: 'Website', url: data?.contact?.website },
 				{ icon: 'fab fa-github', label: 'GitHub', url: data?.contact?.github },
 				{ icon: 'fab fa-linkedin', label: 'LinkedIn', url: data?.contact?.linkedin },
+				{ icon: 'fas fa-graduation-cap', label: 'Google Scholar', url: data?.contact?.scholar },
 				{ icon: 'fas fa-file-arrow-down', label: 'Resume', url: data?.contact?.resume }
 			].filter(l => !!l.url);
 
@@ -672,12 +693,27 @@ publications:
 			if (data?.contact?.resume) {
 				heroActions.appendChild(buttonLink({ icon: 'fas fa-file-arrow-down', label: 'Download Resume', url: data.contact.resume, variant: 'primary' }));
 			}
-			if (data?.contact?.github) {
-				heroActions.appendChild(buttonLink({ icon: 'fab fa-github', label: 'GitHub', url: data.contact.github, variant: 'secondary' }));
-			}
-			if (data?.contact?.linkedin) {
-				heroActions.appendChild(buttonLink({ icon: 'fab fa-linkedin', label: 'LinkedIn', url: data.contact.linkedin, variant: 'secondary' }));
-			}
+			// if (data?.contact?.github) {
+			// 	heroActions.appendChild(buttonLink({ icon: 'fab fa-github', label: 'GitHub', url: data.contact.github, variant: 'secondary' }));
+			// }
+			// if (data?.contact?.linkedin) {
+			// 	heroActions.appendChild(buttonLink({ icon: 'fab fa-linkedin', label: 'LinkedIn', url: data.contact.linkedin, variant: 'secondary' }));
+			// }
+
+			// Footer social links
+			// const footerSocial = qs('#footerSocial');
+			// if (footerSocial) {
+			// 	footerSocial.innerHTML = '';
+			// 	if (data?.contact?.github) {
+			// 		footerSocial.appendChild(buttonLink({ icon: 'fab fa-github', label: 'GitHub', url: data.contact.github, variant: 'secondary' }));
+			// 	}
+			// 	if (data?.contact?.linkedin) {
+			// 		footerSocial.appendChild(buttonLink({ icon: 'fab fa-linkedin', label: 'LinkedIn', url: data.contact.linkedin, variant: 'secondary' }));
+			// 	}
+			// 	if (data?.contact?.scholar) {
+			// 		footerSocial.appendChild(buttonLink({ icon: 'fas fa-graduation-cap', label: 'Google Scholar', url: data.contact.scholar, variant: 'secondary' }));
+			// 	}
+			// }
 
 			// Summary highlights chips
 			const highlights = qs('#summaryHighlights');
@@ -689,7 +725,7 @@ publications:
 			summaryText.innerHTML = '';
 			(data.summary || []).forEach(p => {
 				const para = create('p', 'text-gray-600 leading-relaxed');
-				para.textContent = p;
+				para.innerHTML = p;
 				summaryText.appendChild(para);
 			});
 
@@ -698,9 +734,6 @@ publications:
 			summaryActions.innerHTML = '';
 			if (data?.contact?.email) {
 				summaryActions.appendChild(buttonLink({ icon: 'fas fa-paper-plane', label: 'Contact Me', url: `mailto:${data.contact.email}`, variant: 'primary' }));
-			}
-			if (data?.contact?.website) {
-				summaryActions.appendChild(buttonLink({ icon: 'fas fa-link', label: 'Website', url: data.contact.website, variant: 'secondary' }));
 			}
 		}
 
@@ -801,7 +834,7 @@ publications:
 					label.appendChild(name);
 					label.appendChild(lvl);
 					row.appendChild(label);
-					row.appendChild(progressBar(s.level || 0));
+					row.appendChild(progressBar(s.level || 0, 5, s.name));
 					list.appendChild(row);
 				});
 
@@ -870,13 +903,84 @@ publications:
 					row.appendChild(link);
 				}
 
+				if (pub.link) {
+					const link = buttonLink({ icon: 'fa-solid fa-link', label: 'View Publication', url: pub.link, variant: 'secondary' });
+					link.classList.add('mt-3');
+					row.appendChild(link);
+				}
+
 				wrap.appendChild(row);
 				animateIn(row);
 			});
 		}
 
+		function renderPhotography() {
+			const grid = qs('#photographyGrid');
+			if (!grid) return;
+			grid.innerHTML = '';
+
+			const photos = [
+				{ src: 'images/cool1.jpg', alt: 'lake', caption: 'Serene lake in Pakistan.', position: 'center' },
+				{ src: 'images/cool2.jpg', alt: 'germany', caption: 'Beautiful German landscape near Munich', position: 'center' },
+				{ src: 'images/cool3.jpg', alt: 'water', caption: 'padestrian bridge in a mountain valley in Pakistan', position: 'center' },
+				{ src: 'images/cool4.jpg', alt: 'ship', caption: 'Ship on the water', position: 'bottom' },
+				{ src: 'images/cool5.jpg', alt: 'sunset', caption: 'Stunning sunset scene', position: 'center' },
+				{ src: 'images/cool6.jpg', alt: 'church', caption: 'A church in the middle of the city', position: 'center' },
+				{ src: 'images/lucca.jpg', alt: 'lucca', caption: 'A street in Lucca, Italy', position: 'center' },
+				{ src: 'images/frank.jpg', alt: 'frankfurt', caption: 'In the middle of the Frankfurt', position: 'center' },
+				{ src: 'images/beach.jpg', alt: 'beach', caption: 'One of the beaches in Cinque Terre', position: 'center' },
+				// { src: 'images/beach 2.jpg', alt: 'beach2', caption: 'Another beach in Cinque Terre', position: 'bottom' },
+			];
+
+			photos.forEach((photo) => {
+				const card = create('div', 'group relative overflow-hidden rounded-xl bg-gray-100 hover:shadow-xl transition-all duration-300');
+				const img = create('img', 'w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300');
+				img.src = photo.src;
+				img.alt = photo.alt;
+				img.loading = 'lazy';
+				img.style.objectPosition = photo.position;
+
+				const overlay = create('div', 'absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-end');
+				const caption = create('p', 'text-white text-sm font-medium p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300');
+				caption.textContent = photo.caption;
+
+				overlay.appendChild(caption);
+				card.appendChild(img);
+				card.appendChild(overlay);
+
+				grid.appendChild(card);
+				animateIn(card);
+			});
+		}
+
 		/* ---------- Tabs & Navigation ---------- */
-		const TABS = ['summary', 'experience', 'projects', 'skills', 'education', 'publications'];
+		const NAV_ITEMS = [
+			{ id: 'summary', label: 'Summary', icon: 'fas fa-user' },
+			{ id: 'experience', label: 'Work Experience', icon: 'fas fa-briefcase' },
+			{ id: 'publications', label: 'Publications', icon: 'fas fa-book-open' },
+			{ id: 'education', label: 'Education', icon: 'fas fa-graduation-cap' },
+			{ id: 'projects', label: 'Projects', icon: 'fas fa-code' },
+			{ id: 'skills', label: 'Skills', icon: 'fas fa-magic' },
+			{ id: 'photography', label: 'Photography', icon: 'fas fa-camera' }
+		];
+		const TABS = NAV_ITEMS.map(i => i.id);
+
+		function renderSidebarNav() {
+			const nav = qs('#sidebarNav');
+			if (!nav) return;
+			nav.innerHTML = '';
+			NAV_ITEMS.forEach((item) => {
+				const a = create('a', 'tab-link group flex items-center gap-3 px-3 py-2 rounded-xl text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500');
+				a.href = `#${item.id}`;
+				a.setAttribute('data-tab', item.id);
+				const iconWrap = create('div', 'h-8 w-8 grid place-items-center rounded-lg bg-accent-50 text-accent-700 group-hover:bg-accent-100 transition');
+				iconWrap.innerHTML = `<i class="${item.icon}" aria-hidden="true"></i>`;
+				const labelEl = create('span', 'font-medium', item.label);
+				a.appendChild(iconWrap);
+				a.appendChild(labelEl);
+				nav.appendChild(a);
+			});
+		}
 
 		function setActiveTab(tabName, opts = { pushHash: true }) {
 			if (!TABS.includes(tabName)) tabName = 'summary';
@@ -965,6 +1069,7 @@ publications:
 			renderSkills(resume);
 			renderEducation(resume);
 			renderPublications(resume);
+			renderPhotography();
 			qs('#year').textContent = new Date().getFullYear();
 			qs('#summaryAvatar').addEventListener('load', (e) => animateIn(e.target));
 		}
@@ -973,13 +1078,11 @@ publications:
 			try {
 				const data = jsyaml.load(RESUME_YAML) || {};
 				renderAll(data);
+				renderSidebarNav();
 				bindNavigation();
 
-				// Initial tab
-				const fromHash = (location.hash || '').replace('#', '');
-				const fromStore = localStorage.getItem('activeTab');
-				const initial = TABS.includes(fromHash) ? fromHash : (TABS.includes(fromStore) ? fromStore : 'summary');
-				setActiveTab(initial, { pushHash: false });
+				// Initial tab: always start on Summary
+				setActiveTab('summary', { pushHash: false });
 			} catch (err) {
 				console.error('Failed to parse YAML:', err);
 				alert('Failed to load resume data. Please check the console for details.');
