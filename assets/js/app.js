@@ -1193,9 +1193,27 @@ function toggleMaximize(windowEl) {
 }
 
 function positionWindow(windowEl) {
-  const offset = (state.offsets++ % 6) * 32;
-  windowEl.style.left = `${160 + offset}px`;
-  windowEl.style.top = `${120 + offset}px`;
+  const screenWidth = window.innerWidth;
+  const screenHeight = window.innerHeight;
+  const taskbarHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--taskbar-height'), 10) || 56;
+  
+  // On smaller screens (width < 900px), center the window
+  if (screenWidth < 900) {
+    const windowWidth = parseInt(windowEl.style.width) || 600;
+    const windowHeight = parseInt(windowEl.style.height) || 500;
+    
+    // Center horizontally and vertically (accounting for taskbar)
+    const left = Math.max(10, (screenWidth - windowWidth) / 2);
+    const top = Math.max(10, (screenHeight - taskbarHeight - windowHeight) / 2);
+    
+    windowEl.style.left = `${left}px`;
+    windowEl.style.top = `${top}px`;
+  } else {
+    // On larger screens, use the cascading offset
+    const offset = (state.offsets++ % 6) * 32;
+    windowEl.style.left = `${160 + offset}px`;
+    windowEl.style.top = `${120 + offset}px`;
+  }
 }
 
 function enableDrag(windowEl, handle) {
@@ -1260,6 +1278,7 @@ function enableResize(windowEl, resizer) {
 
 function toggleStartMenu(forceState) {
   const isVisible = forceState ?? startMenu.classList.contains('hidden');
+  playClickSound();
   if (isVisible) {
     startMenu.classList.remove('hidden');
     startButton.setAttribute('aria-expanded', 'true');
