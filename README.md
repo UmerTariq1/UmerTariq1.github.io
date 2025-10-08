@@ -1,4 +1,4 @@
-# Retro Windows Portfolio
+# Portfolio site
 
 This is the project implementation of my portfolio website. The entire desktop experience – login animation, Bliss wallpaper, draggable explorer windows, Start menu, taskbar clock, and context menu, is generated from a single YAML data file so it can be deployed as a static site (e.g., GitHub Pages).
 
