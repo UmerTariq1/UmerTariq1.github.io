@@ -1,6 +1,10 @@
+[![Portfolio Website](https://img.shields.io/badge/Portfolio-Website-blue?style=for-the-badge)](https://umertariq1.github.io/)
+
+
 # Portfolio site
 
 This is the project implementation of my portfolio website. The entire desktop experience – login animation, Bliss wallpaper, draggable explorer windows, Start menu, taskbar clock, and context menu, is generated from a single YAML data file so it can be deployed as a static site (e.g., GitHub Pages).
+
 
 ## Project structure
 
