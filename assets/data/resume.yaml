@@ -131,87 +131,142 @@ experience:
       - "Software Engineering"
 
 projects:
-  - name: "RAG LLM chatbot with external knowledge source"
-    description: "Built a Retrieval-Augmented Generation chatbot using Llama3 and Hugging Face transformers with Streamlit interface"
-    tags:
-      - "Python"
-      - "Llama3"
-      - "Hugging Face"
-      - "Streamlit"
-    links:
-      - label: "GitHub"
-        icon: "fab fa-github"
-        url: "https://github.com/UmerTariq1"
-
-  - name: "Graph-based Cloud Troubleshooting RAG Assistant"
-    description: "Developed a graph database-powered RAG system for cloud infrastructure troubleshooting using Neo4j and LangChain"
-    tags:
-      - "Neo4j"
-      - "Llama3"
-      - "LangChain"
-      - "Streamlit"
-    links:
-      - label: "GitHub"
-        icon: "fab fa-github"
-        url: "https://github.com/UmerTariq1"
-
-  - name: "AI Tool for Digital Persona Classification from Social Data"
-    description: "Created an AI-powered classification system for analyzing digital personas using transformer models and OpenAI API"
-    tags:
-      - "Python"
-      - "Transformers"
-      - "Streamlit"
-      - "OpenAI"
-      - "SpaCy"
-    links:
-      - label: "GitHub"
-        icon: "fab fa-github"
-        url: "https://github.com/UmerTariq1"
-
-  - name: "Deep IR System Using Context-Aware Vector Representations"
-    description: "Implemented a sophisticated information retrieval system leveraging BERT embeddings and vector search capabilities"
-    tags:
-      - "FAISS"
-      - "LSTM"
-      - "BERT"
-      - "Elasticsearch"
-
-  - name: "Time Series Analysis on Solar Energy Dataset"
-    description: "Performed comprehensive time series analysis and forecasting on solar energy data using statistical models"
-    tags:
-      - "EDA"
-      - "ARIMA"
-      - "SARIMA"
-      - "NumPy"
-      - "Pandas"
-
-  - name: "Lyrics Generator using LLMs and its website"
-    description: "Built a complete web application for generating song lyrics using LLMs with Angular frontend and Django backend"
-    tags:
-      - "Python"
-      - "OpenAI API"
-      - "Langchain"
-      - "Angular"
-      - "Django"
-    links:
-      - label: "GitHub"
-        icon: "fab fa-github"
-        url: "https://github.com/UmerTariq1/Lyrics-Analysis-and-Generation"
-
-  - name: "Vector Balls A Dynamic Physics-Based Survival Game"
-    description: "Created an interactive physics-based game using JavaScript and Python with both web and desktop versions"
+  - name: "Wheel of Life Tracker"
+    description: "Interactive web app to visualize personal balance across life areas and it remembers the user's entries through browser's local storage and shows them in a chart."
     tags:
       - "HTML"
+      - "CSS"
       - "JavaScript"
+    images:
+      - "assets/images/wheeloflife/1.png"
+      - "assets/images/wheeloflife/2.png"
+      - "assets/images/wheeloflife/3.png"
+    links:
+      - label: "Demo"
+        url: "https://umertariq1.github.io/Wheel-of-Life/"
+      - label: "GitHub"
+        url: "https://github.com/UmerTariq1/Wheel-of-Life"
+
+  - name: "Wordbox/Boggle Game Solver"
+    description: "First of its kind, A fast, interactive web application that finds all valid words in a 5×5 letter grid following adjacency rules. Perfect for Plato app's Wordbox game."
+    tags:
+      - "HTML"
+      - "CSS"
+      - "JavaScript"
+    images:
+      - "assets/images/wordbox/1.png"
+      - "assets/images/wordbox/2.png"
+    links:
+      - label: "Demo"
+        url: "https://umertariq1.github.io/WordBox-Solver-for-Plato/"
+      - label: "GitHub"
+        url: "https://github.com/UmerTariq1/WordBox-Solver-for-Plato"
+
+  - name: "EasyGPT"
+    description: "EasyGPT is a clean, step‑by‑step AI assistant. Instead of wall‑of‑text answers, it breaks tasks into simple, navigable cards you can move through with Next/Back and ask focused follow‑up questions."
+    tags:
       - "Python"
-      - "PyGame"
+      - "HTML"
+      - "CSS"
+      - "JavaScript"
+    images:
+      - "assets/images/EasyGPT/1.png"
+      - "assets/images/EasyGPT/2.png"
+      - "assets/images/EasyGPT/3.png"
+    links:
+      - label: "Demo"
+        url: "https://www.linkedin.com/feed/update/urn:li:activity:7372301761149153280/"
+      - label: "GitHub"
+        url: "https://github.com/UmerTariq1/EasyGPT"
+
+  - name: "Digital Persona Predictor"
+    description: "An intelligent tool that analyzes your digital presence to predict your online persona. By analyzing your bio and social media posts, it identifies patterns and characteristics that define your digital identity."
+    tags:
+      - "Python"
+      - "AI"
+      - "OpenAI"
+      - "Streamlit"
+    images:
+      - "assets/images/DPP/1.png"
+      - "assets/images/DPP/2.png"
+      - "assets/images/DPP/3.png"
+    links:
+      - label: "Demo"
+        url: "https://decoding-persona.streamlit.app/"
+      - label: "GitHub"
+        url: "https://github.com/UmerTariq1/Decoding-Digital-Persona"
+
+  - name: "Cloud Infrastructure Troubleshooting Assistant (GraphRAG Demo)"
+    description: "An AI-powered troubleshooting assistant that combines graph reasoning with LLM explanation generation to trace complex cloud infrastructure issues and provide human-understandable answers."
+    tags:
+      - "Python"
+      - "FastAPI"
+      - "Neo4j"
+      - "Gradio"
+      - "GraphViz"
+      - "LLM"
+    images:
+      - "assets/images/GraphRAG/1.png"
+      - "assets/images/GraphRAG/2.png"
+      - "assets/images/GraphRAG/3.png"
+      - "assets/images/GraphRAG/4.png"
     links:
       - label: "GitHub"
-        icon: "fab fa-github"
-        url: "https://github.com/UmerTariq1/Vector-Balls"
-      - label: "Website"
-        icon: "fab fa-solid fa-link"
-        url: "https://umertariq1.github.io/Vector-Balls/"
+        url: "https://github.com/UmerTariq1/rag-for-service-diagram"
+
+  - name: "Tailor Your Resume"
+    description: "A Gradio-based tool that tailors your existing resume to specific job descriptions by optimizing relevance, highlighting key experiences, and enhancing ATS keyword alignment. Built as an extension of the lib_resume_builder_AIHawk package for smarter, customized resume generation."
+    tags:
+      - "Python"
+      - "Gradio"
+      - "LLM"
+      - "NLP"
+    images:
+      - "assets/images/TailorResume/1.jpeg"
+    links:
+      - label: "GitHub"
+        url: "https://github.com/UmerTariq1/Tailor-My-Resume"
+
+  - name: "Course Rater"
+    description: "A website to rate courses and the teachers for your university"
+    tags:
+      - "Python"
+      - "SQLite"
+      - "HTML"
+      - "CSS"
+      - "JavaScript"
+    images:
+      - "assets/images/CourseRater/1.png"
+      - "assets/images/CourseRater/2.png"
+      - "assets/images/CourseRater/3.png"
+    links:
+      - label: "GitHub"
+        url: "https://github.com/UmerTariq1/CourseRater"
+
+  - name: "Mensa Menu Rater"
+    description: "tired of going to the mensa and not knowing what to eat? this app will help you rate the menus and help you choose the best one."
+    tags:
+      - "Python"
+      - "SQLite"
+      - "HTML"
+      - "CSS"
+      - "JavaScript"
+    images:
+      - "assets/images/MensaMenuRater/1.png"
+      - "assets/images/MensaMenuRater/2.png"
+    links:
+      - label: "GitHub"
+        url: "https://github.com/UmerTariq1/Mensa-Project"
+
+  - name: "Tax Filing Completion Predictor"
+    description: "This project implements a machine learning solution to predict whether users will complete their tax filing based on their activity patterns, demographics, and platform engagement."
+    tags:
+      - "Python"
+      - "Machine Learning"
+      - "Data Science"
+    links:
+      - label: "GitHub"
+        url: "https://github.com/UmerTariq1/tax_filing_dropoff_prediction"
 
 skills:
   programming_languages:

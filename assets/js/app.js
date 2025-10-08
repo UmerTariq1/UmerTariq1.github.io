@@ -569,28 +569,90 @@ function renderExperience() {
 
 function renderProjects() {
   const container = document.createElement('div');
+  let projectIndex = 0;
+  
   (state.data.projects || []).forEach((project) => {
     const section = document.createElement('section');
+    section.className = 'project-section';
+    
     const title = document.createElement('h3');
     title.textContent = project.name;
+    section.appendChild(title);
+    
+    // Add image carousel if images exist
+    if (Array.isArray(project.images) && project.images.length > 0) {
+      const swiperContainer = document.createElement('div');
+      swiperContainer.className = 'project-swiper-container';
+      const swiperId = `project-swiper-${projectIndex}`;
+      
+      swiperContainer.innerHTML = `
+        <div class="swiper project-swiper" id="${swiperId}">
+          <div class="swiper-wrapper">
+            ${project.images.map(imgSrc => `
+              <div class="swiper-slide">
+                <img src="${imgSrc}" alt="${project.name} screenshot" loading="lazy" />
+              </div>
+            `).join('')}
+          </div>
+          ${project.images.length > 1 ? `
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          ` : ''}
+        </div>
+      `;
+      section.appendChild(swiperContainer);
+      
+      // Initialize swiper after a short delay to ensure DOM is ready
+      setTimeout(() => {
+        const swiperEl = document.getElementById(swiperId);
+        if (swiperEl && !swiperEl.swiper) {
+          new Swiper(`#${swiperId}`, {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: project.images.length > 1,
+            navigation: project.images.length > 1 ? {
+              nextEl: `#${swiperId} .swiper-button-next`,
+              prevEl: `#${swiperId} .swiper-button-prev`,
+            } : false,
+            pagination: project.images.length > 1 ? {
+              el: `#${swiperId} .swiper-pagination`,
+              clickable: true,
+            } : false,
+            keyboard: { enabled: true },
+            effect: 'slide',
+            speed: 400,
+          });
+        }
+      }, 100);
+      
+      projectIndex++;
+    }
+    
     const description = document.createElement('p');
     description.textContent = project.description;
+    section.appendChild(description);
+    
     const tags = document.createElement('p');
     tags.innerHTML = `<strong>Tags:</strong> ${(project.tags || []).join(', ')}`;
-    section.append(title, description, tags);
+    section.appendChild(tags);
+    
     if (Array.isArray(project.links)) {
       const linkRow = document.createElement('p');
+      linkRow.className = 'project-links';
       project.links.forEach((link) => {
         const anchor = document.createElement('a');
         anchor.href = link.url;
         anchor.target = '_blank';
         anchor.rel = 'noopener';
         anchor.textContent = link.label;
+        anchor.className = 'project-link';
         linkRow.appendChild(anchor);
         linkRow.append(' ');
       });
       section.appendChild(linkRow);
     }
+    
     container.appendChild(section);
   });
   return container;
