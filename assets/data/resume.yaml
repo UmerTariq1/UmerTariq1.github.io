@@ -563,10 +563,10 @@ photography:
       caption: "One of the beaches in Cinque Terre"
       location: "Cinque Terre, Italy"
 
-    # - src: "images/me2.JPG"
-    #   alt: "me"
-    #   caption: "one of the finest beaches"
-    #   location: "Mmmm"
+    - src: "images/me2.JPG"
+      alt: ".."
+      caption: "one of the finest beaches"
+      location: "Mmmm"
 
 interests:
   - "Photography"
